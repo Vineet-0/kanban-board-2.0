@@ -6,7 +6,7 @@ import GroupByPriority from "./GroupBy/GroupByPriority.jsx";
 import GroupByStatus from "./GroupBy/GroupByStatus.jsx";
 import GroupByUser from "./GroupBy/GroupByUser.jsx";
 
-import getBodyData from "../services/globalApi.jsx"
+import getBodyData from "../services/GlobalApi.jsx"
 
 const Body = ({
   selectedGrouping,

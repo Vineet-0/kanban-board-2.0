@@ -5,9 +5,15 @@ import Navbar from './component/Navbar'
 import Body from './component/Body' 
 
 export default function Home() {
-
-  const [selectedGrouping, setSelectedGrouping] = useState(localStorage.getItem('selectedGrouping') || 'Status');
-  const [selectedOrdering, setSelectedOrdering] = useState(localStorage.getItem('selectedOrdering') || 'Priority');
+  const [selectedGrouping, setSelectedGrouping] = useState('Status');
+  const [selectedOrdering, setSelectedOrdering] = useState('Priority');
+  
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setSelectedGrouping(localStorage.getItem('selectedGrouping'));
+      setSelectedOrdering(localStorage.getItem('selectedOrdering'));
+    }
+  }, []);
 
   useEffect(() => {
     localStorage.setItem('selectedGrouping', selectedGrouping);

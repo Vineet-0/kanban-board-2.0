@@ -3,8 +3,13 @@ import { MdSunny } from "react-icons/md";
 import { IoMdMoon } from "react-icons/io";
 
 const DarkModeToggle = () => {
-  const storedTheme = localStorage.getItem('isDarkMode');
-  const [isDarkMode, setIsDarkMode] = useState(storedTheme === 'true');
+  const [isDarkMode, setIsDarkMode] = useState('true');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsDarkMode(localStorage.getItem('isDarkMode'));
+    }
+  }, []);
 
   useEffect(() => {
     const html = document.documentElement;

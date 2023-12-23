@@ -1,8 +1,8 @@
 "use client"
 import React, {useState,useEffect} from 'react';
 
-import CardHead from '../Card/CardHead.jsx';
-import CardBody from '../Card/CardBody.jsx';
+import CardHead from '../Card/cardHead.jsx';
+import CardBody from '../Card/cardBody.jsx';
 
 import priorities from '../GroupingObjects/Priorities.jsx'
 
