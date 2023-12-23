@@ -2,11 +2,11 @@
 import React from "react";
 import { useState,useEffect } from "react";
 
-import GroupByPriority from "./GroupBy/GroupByPriority.jsx";
-import GroupByStatus from "./GroupBy/GroupByStatus.jsx";
-import GroupByUser from "./GroupBy/GroupByUser.jsx";
+import GroupByPriority from "./GroupBy/groupByPriority.jsx";
+import GroupByStatus from "./GroupBy/groupByStatus.jsx";
+import GroupByUser from "./GroupBy/groupByUser.jsx";
 
-import getBodyData from "../services/GlobalApi.jsx"
+import getBodyData from "../services/globalApi.jsx"
 
 const Body = ({
   selectedGrouping,
