@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import statuses from "../GroupingObjects/Statuses.jsx";
-import CardHead from "../Card/CardHead.jsx";
-import CardBody from "../Card/CardBody.jsx";
+import statuses from "../GroupingObjects/statuses.jsx";
+import CardHead from "../Card/cardHead.jsx";
+import CardBody from "../Card/cardBody.jsx";
 
 const GroupByStatus = ({ data, grouping, ordering }) => {
   const [groupedTickets, setGroupedTickets] = useState({});
