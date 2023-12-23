@@ -1,10 +1,10 @@
 "use client"
 import React, {useState,useEffect} from 'react';
 
-import CardHead from '../Card/cardHead.jsx';
-import CardBody from '../Card/cardBody.jsx';
+import CardHead from '../Card/CardHead.jsx';
+import CardBody from '../Card/CardBody.jsx';
 
-import priorities from '../GroupingObjects/priorities.jsx'
+import priorities from '../GroupingObjects/Priorities.jsx'
 
 const GroupByPriority = ({ data, grouping, ordering }) => {
   const [groupedTickets, setGroupedTickets] = useState({});

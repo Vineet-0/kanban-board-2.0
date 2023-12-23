@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import CardHead from '../Card/cardHead';
-import CardBody from '../Card/cardBody';
+import CardHead from '../Card/CardHead';
+import CardBody from '../Card/CardBody';
 
 const GroupByUser = ({ data, grouping, ordering }) => {
   const [groupedTickets, setGroupedTickets] = useState({});
