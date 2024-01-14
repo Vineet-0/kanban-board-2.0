@@ -2,13 +2,13 @@
 import { HiOutlineTrash } from 'react-icons/hi'
 import { useRouter } from 'next/navigation'
 
-const RemoveBtn = ({id}) => {
+const RemoveTicketBtn = ({id}) => {
     const router = useRouter();
-    const removeTopic = async() => {
+    const removeTicket = async() => {
         const confirmed = confirm('Are you sure you want to Delete this?');
 
         if(confirmed) {
-            const res = await fetch(`http://localhost:3000/api/topics/?id=${id}`,{
+            const res = await fetch(`http://localhost:3000/api/tickets/?id=${id}`,{
                 method: 'DELETE',
             });
             if(res.ok)
@@ -18,10 +18,10 @@ const RemoveBtn = ({id}) => {
         }
     }
     return (
-        <button onClick={removeTopic} className='text-red-400'>
+        <button onClick={removeTicket} className='text-red-400'>
             <HiOutlineTrash size={24}/>
         </button>
     )
 }
 
-export default RemoveBtn
+export default RemoveTicketBtn

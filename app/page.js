@@ -1,7 +1,12 @@
-import TopicsList from '@/components/TopicsList'
+import NavBar from '@/components/NavBar'
+import TicketsList from '@/components/TicketsList'
 
 export default function Home() {
   return (
-      <TopicsList />
+    <div>
+      <NavBar />
+      <TicketsList />
+    </div>
+      
   )
 }

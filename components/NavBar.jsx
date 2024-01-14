@@ -7,8 +7,8 @@ const NavBar = () => {
         <Link href={"/"} className='text-white font-bold'>
             ToDo
         </Link>
-        <Link href={"/addTopic"} className='bg-white p-2'>
-            Add Topic
+        <Link href={"/addTicket"} className='bg-white p-2'>
+            Add Ticket
         </Link>
     </nav>
   )
