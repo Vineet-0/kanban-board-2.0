@@ -22,7 +22,7 @@ const TopicsList = async () => {
   return (
     <>
         {topics.map(t => (
-            <div className='p-4 border border-slate-300 my-3 flex items-start justify-between gap-5 rounded-md hover:scale-[1.03] transition ease-in-out'>
+            <div key={t._id} className='p-4 border border-slate-300 my-3 flex items-start justify-between gap-5 rounded-md hover:scale-[1.03] transition ease-in-out'>
                 <div>
                     <h2 className='font-bold text-2xl'>
                         {t.title}
