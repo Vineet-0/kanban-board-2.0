@@ -21,7 +21,7 @@ const CardBody = ({ ticket, users, grouping }) => {
     const status = statuses.find(s => s.title === ticket.status);
 
     return (
-        <div className='text-[15px] p-[20px] flex flex-col gap-2 rounded-lg bg-white dark:bg-[#161b22] shadow'>
+        <div className='hover:scale-[1.03] transition ease-in-out duration-300 text-[15px] p-[20px] flex flex-col gap-2 rounded-lg bg-white dark:bg-[#161b22] shadow'>
             {/* Top section with user ID and user icon (if grouping is not 'User') */}
             <div className='flex flex-row items-center justify-between text-[#a6a9ad] bg-white dark:bg-[#161b22]'>
                 <div className='bg-white dark:bg-[#161b22]'>
